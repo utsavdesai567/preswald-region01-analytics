@@ -1,0 +1,23 @@
+[project]
+title      = "Region 01 Incident Dashboard"
+version    = "0.1.0"
+port       = 8501
+slug       = "region-01-dashboard"
+entrypoint = "app.py"
+
+[branding]
+name            = "Region 01 Dashboard"
+logo            = "assets/logo.png"
+favicon         = "assets/favicon.ico"
+primary_color   = "#1f77b4"
+secondary_color = "#ff7f0e"
+
+[[datasources]]
+name = "region_01"
+type = "csv"
+path = "data/region_01.csv"
+
+[logging]
+enable = true
+level  = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
